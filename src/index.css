@@ -35,6 +35,25 @@ button:hover{
 }
 
 @layer components{
+  .arrow_wrapper{
+    @apply group-hover:bg-yellow-500 size-10 rounded-full absolute right-10 top-1/2 -translate-y-1/2 flex justify-center items-center overflow-hidden;
+  }
+  .cta_wrapper{
+    @apply relative z-20 cursor-pointer;
+  }
+  .cta_button{
+    @apply px-4 py-4 rounded-lg bg-green-800 flex justify-center items-center relative cursor-pointer overflow-hidden;
+  }
+  .bg_circle {
+    @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 w-[120%] h-[120%] group-hover:size-10 group-hover:right-10 rounded-full bg-white-50 transition-all duration-500;
+  }
+  .text {
+    @apply uppercase md:text-lg text-black transition-all duration-500 group-hover:text-white-50 group-hover:-translate-x-5 xl:translate-x-0 -translate-x-5;
+  }
+
+
+
+  
   .hero_layout{
     @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
   }
