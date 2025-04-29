@@ -2,6 +2,8 @@ import React from 'react'
 import { words } from '../../../constants'
 import Button from '../Button'
 
+import HeroExperience from '../HeroModels/HeroExperience'
+
 const Hero = () => {
   const bgOne = `https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg?semt=ais_hybrid&w=740`
 
@@ -48,7 +50,12 @@ const Hero = () => {
         </header>
 
         {/* RIGHT SIDE: 3d model  */}
-        
+          <figure>
+            <div className="hero_3d_layout border-blue-300 border-2">
+              <HeroExperience />
+            </div>
+          </figure>
+
       </div>
     </section>
   )

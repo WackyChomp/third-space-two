@@ -42,7 +42,7 @@ button:hover{
     @apply relative z-20 cursor-pointer;
   }
   .cta_button{
-    @apply px-4 py-4 rounded-lg bg-green-800 flex justify-center items-center relative cursor-pointer overflow-hidden;
+    @apply px-4 py-4 rounded-lg bg-teal-800 flex justify-center items-center relative cursor-pointer overflow-hidden;
   }
   .bg_circle {
     @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 w-[120%] h-[120%] group-hover:size-10 group-hover:right-10 rounded-full bg-white-50 transition-all duration-500;
@@ -62,6 +62,10 @@ button:hover{
   }
   .hero_text_slide{
     @apply absolute pt-0 px-2 md:px-5 py-[30px] h-[48px] md:h-[78px] md:translate-y-1 translate-y-0 overflow-hidden;
+  }
+
+  .hero_3d_layout{
+    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
   }
   
 }
