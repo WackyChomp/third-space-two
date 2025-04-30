@@ -4,6 +4,8 @@ import Button from '../Button'
 
 import HeroExperience from '../HeroModels/HeroExperience'
 
+import triangle from '/public/layered_triangle.svg'     // import name is a made-up alias
+
 const Hero = () => {
   const bgOne = `https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg?semt=ais_hybrid&w=740`
 
@@ -11,7 +13,8 @@ const Hero = () => {
     <section id='hero' className='bg-red-950 relative overflow-hidden'>
 
       <div className="pry_gradient absolute top-0 left-0 z-10">
-        <img src={bgOne} alt="random background" />
+        <img src={triangle} alt="random background" className='rotate-x-180'/>
+        <img src={bgOne} alt="random background" className='h-[400px]'/>
       </div>
 
       <div className="hero_layout">

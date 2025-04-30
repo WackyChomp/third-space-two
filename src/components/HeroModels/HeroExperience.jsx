@@ -1,8 +1,10 @@
+import { useMediaQuery } from 'react-responsive'
 import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 
 const HeroExperience = () => {
-  const isTablet = false
+  const isTablet = useMediaQuery({ query: '(max-wdith: 1024px)'})
+  const isMobile = useMediaQuery({ query: '(max-wdith: 768px)'})
 
   return (
     <Canvas camera={{position:[0,0,15], fov:45} }>
