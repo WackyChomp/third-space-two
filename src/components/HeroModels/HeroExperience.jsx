@@ -3,6 +3,7 @@ import { OrbitControls } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { Robocop } from './Robocop_animated'
 import HeroLights from './HeroLights'
+import { PFFRoom } from './Pff_room'
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: '(max-wdith: 1024px)'})
@@ -25,14 +26,17 @@ const HeroExperience = () => {
       <HeroLights />
 
       <group
-        scale={isMobile? 0.8 : 1.5}
-        position={[0, -1.3, 0]}
+        scale={isMobile? 0.8 : 1}
+        position={[0, -1, 0]}
       >
-        <mesh>
+        {/* <mesh>
           <boxGeometry args={[1,1,1]}/> 
           <meshStandardMaterial color='teal' />
-        </mesh>
-        <Robocop />
+        </mesh> */}
+
+        {/* <Robocop /> */}
+
+        <PFFRoom />
       </group>      
     </Canvas>
   )
