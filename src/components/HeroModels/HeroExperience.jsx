@@ -25,6 +25,9 @@ const HeroExperience = () => {
 
       <HeroLights />
 
+
+
+      {/* ------------------ group 1 ------------------ */}
       <group
         scale={isMobile? 0.8 : 1}
         position={[0, -1, 0]}
@@ -34,10 +37,38 @@ const HeroExperience = () => {
           <meshStandardMaterial color='teal' />
         </mesh> */}
 
-        {/* <Robocop /> */}
+        <mesh 
+          position={[0, 2.5, 0]}
+          scale={2}
+        >
+          <sphereGeometry args={[0.5]}/>
+          <meshStandardMaterial color='white' />
+        </mesh>
 
+        <Robocop />
+
+        <mesh 
+          rotation={[Math.PI / -2, 0, 0]} 
+          position={[0,-1.5,0]}
+          scale={5}
+        >
+          <planeGeometry/>
+          <meshStandardMaterial color='white' />
+        </mesh>
+
+
+        {/* <PFFRoom /> */}
+      </group>
+
+      {/* ------------------ group 2 ------------------ */}
+      {/* <group
+        scale={isMobile? 0.8 : 1}
+        position={[0, -1, 0]}
+      >
         <PFFRoom />
-      </group>      
+      </group> */}
+
+
     </Canvas>
   )
 }
