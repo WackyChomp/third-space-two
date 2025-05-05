@@ -4,6 +4,7 @@ import { Canvas } from '@react-three/fiber'
 import { Robocop } from './Robocop_animated'
 import HeroLights from './HeroLights'
 import { PFFRoom } from './Pff_room'
+import Particles from './Particles'
 
 const HeroExperience = () => {
   const isTablet = useMediaQuery({ query: '(max-wdith: 1024px)'})
@@ -25,6 +26,7 @@ const HeroExperience = () => {
 
       <HeroLights />
 
+      <Particles count={100} />
 
 
       {/* ------------------ group 1 ------------------ */}

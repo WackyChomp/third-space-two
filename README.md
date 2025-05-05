@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center" id='readme-top'>
-  <img src="https://i.gifer.com/7CJk.gif" alt="Logo" target='blank' width="350" height="200" style=''>
+  <img src="https://i.gifer.com/7CJk.gif" alt="Logo" target='blank' width="350" height="200">
 
   <h3 align="center">2nd Third Space</h3>
 
@@ -22,6 +22,17 @@
 </div>
 
 <br />
+
+
+### About
+What's better than flat 2d? How about 3d? 
+Lively up your personal portfolio/site with 3d models and animations.
+
+Fortunately lots of 3d models exist! You can either create your own 3d models or procure from an existing repository such as Sketchfab.
+
+This repo is essentially a template allowing you to customize your site how ever you want!
+- Swapping and adjust sizing of the 3d models
+- Personalize and customizing the color theme
 
 
 ### Built With
