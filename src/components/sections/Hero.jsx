@@ -1,13 +1,33 @@
 import React from 'react'
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+
 import { words } from '../../../constants'
 import Button from '../Button'
 
 import HeroExperience from '../HeroModels/HeroExperience'
+import AnimatedCounter from '../AnimatedCounter'
 
 import triangle from '/public/layered_triangle.svg'     // import name is a made-up alias
 import blobOne from '/public/blob-scatter-haikei.svg'
 
 const Hero = () => {
+  useGSAP(() => {
+    gsap.fromTo('.hero_text h1',
+      {
+        y: 50,
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        stagger: 0.7,
+        duration: 1,
+        ease: 'power2.inOut',
+      }
+    )
+  })
+
   const bgOne = `https://img.freepik.com/free-vector/realistic-background-futuristic-style_23-2149129125.jpg?semt=ais_hybrid&w=740`
 
   return (
@@ -61,6 +81,8 @@ const Hero = () => {
           </figure>
 
       </div>
+
+      <AnimatedCounter />
     </section>
   )
 }
