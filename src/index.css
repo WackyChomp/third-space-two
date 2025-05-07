@@ -35,6 +35,17 @@ button:hover{
 }
 
 @layer components{
+  .padding_x{
+    @apply px-5 md:px-10
+  }
+  .padding_x_lg{
+    @apply px-5 md:px-20
+  }
+
+  .grid_4_cols{
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+  }
+
   .arrow_wrapper{
     @apply group-hover:bg-yellow-500 size-10 rounded-full absolute right-10 top-1/2 -translate-y-1/2 flex justify-center items-center overflow-hidden;
   }
