@@ -14,7 +14,8 @@ const counterItems = [
   { value: 70, suffix: "+", label: "Completed projects" },
   { value: 120000, suffix: "+ hours", label: "Media consumption" },
   { value: 2, suffix: "% :P", label: "Client retention rate" },
-  { value: 100, suffix: "%", label: "Chance you remember my name" },
+  { value: 1000000000000, suffix: "%", label: "Big number goes brrrr" },
+  { value: 100, suffix: "%", label: "You remember my name" },
 ];
 
 export{ words, counterItems }

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Hero from './components/sections/Hero'
+import ShowcaseSection from './components/sections/ShowcaseSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,8 @@ function App() {
       </div>
 
       <Hero />
+
+      <ShowcaseSection />
     </>
   )
 }

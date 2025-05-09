@@ -63,12 +63,12 @@ const HeroExperience = () => {
       </group>
 
       {/* ------------------ group 2 ------------------ */}
-      {/* <group
-        scale={isMobile? 0.8 : 1}
-        position={[0, -1, 0]}
+      <group
+        scale={isMobile? 0.8 : 1.3}      // scale={isMobile? 0.8 : 1}
+        position={[1.2, -2.47, 0]}       // position={[0, -1, 0]}
       >
         <PFFRoom />
-      </group> */}
+      </group>
 
 
     </Canvas>
