@@ -18,4 +18,21 @@ const counterItems = [
   { value: 100, suffix: "%", label: "You remember my name" },
 ];
 
-export{ words, counterItems }
+const navLinks = [
+  {
+    name: "Project",
+    link: "#project",
+  },
+  {
+    name: "Experience",
+    link: "#experience",
+  },
+  /*
+  {
+    name: "",
+    link: "",
+  } 
+  */
+];
+
+export{ words, counterItems, navLinks }
