@@ -27,6 +27,14 @@ const navLinks = [
     name: "Experience",
     link: "#experience",
   },
+  {
+    name: "Test 1",
+    link: "#test1",
+  },
+  {
+    name: "Test 2",
+    link: "#test2",
+  },
   /*
   {
     name: "",
