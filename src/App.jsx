@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import Navbar from './components/Navbar'
 import Hero from './components/sections/Hero'
 import ShowcaseSection from './components/sections/ShowcaseSection'
+import LogoShowcase from './components/LogoShowcase'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -32,6 +33,8 @@ function App() {
       <Hero />
 
       <ShowcaseSection />
+
+      <LogoShowcase />
     </>
   )
 }

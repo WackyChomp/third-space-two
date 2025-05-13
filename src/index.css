@@ -85,7 +85,7 @@ button:hover{
   }
 
   .navbar.scrolled{
-    @apply top-0 bg-green-500;
+    @apply top-0 bg-green-900;
   }
   .navbar.not_scrolled{
     @apply md:top-10 top-0 bg-transparent;
@@ -144,6 +144,10 @@ button:hover{
   .showcase_list_wrapper h2{
     @apply text-lg md:text-xl lg:text-2xl font-semibold mt-5;
   }
+
+  .gradient_edge{
+    @apply w-36 h-full absolute bottom-0 z-20;
+  }
 }
 
 
@@ -197,4 +201,36 @@ button:hover{
   background-image: radial-gradient(circle at center center, #575600, #d20f0f), repeating-radial-gradient(circle at center center, #575600, #575600, 23px, transparent 46px, transparent 23px);
   background-blend-mode: multiply;
   background-color: #d20f0f;
+}
+
+
+.marquee {
+  width: 100dvw;
+  overflow: hidden;
+  position: relative;
+}
+.marquee_box {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 60s linear infinite;
+}
+.marquee_item {
+  float: left;
+}
+.marquee_item {
+  @apply md:w-40 w-32;
+}
+
+
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
