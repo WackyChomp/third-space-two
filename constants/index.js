@@ -50,11 +50,13 @@ const logoIconsList = [
     imgPath: `https://www.svgrepo.com/show/303110/apple-black-logo.svg`,
     imgPath: `https://www.svgrepo.com/show/303115/twitter-3-logo.svg`,
     imgPath: `https://www.svgrepo.com/show/303121/forbes-logo.svg`,
-    imgPath: `https://www.svgrepo.com/show/303143/microsoft-logo.svg`,
     imgPath: `https://www.svgrepo.com/show/303135/soundcloud-logo.svg`,
     imgPath: `https://img.icons8.com/ios-filled/100/google.png`,
     imgPath: `https://img.icons8.com/ios-filled/100/facebook.png`,
     imgPath: `https://img.icons8.com/ios-filled/100/amazon.png`,
+    imgPath: '../layered_triangle.svg',
+    imgPath: '../vite.svg',
+    imgPath: `https://www.svgrepo.com/show/303143/microsoft-logo.svg`,
     // imgPath: ``,
   }
 ]

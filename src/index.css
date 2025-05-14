@@ -204,25 +204,30 @@ button:hover{
 }
 
 
+
+
+.marquee_item {
+  @apply bg-black md:w-40 w-32;
+}
+
 .marquee {
+  background-color: #833AB4;
   width: 100dvw;
   overflow: hidden;
   position: relative;
 }
 .marquee_box {
+  background-color: #d20f0f;
   display: flex;
   align-items: center;
   width: 200%;
   height: 100%;
   position: absolute;
   overflow: hidden;
-  animation: marquee 60s linear infinite;
+  animation: marquee 10s linear infinite;       /* 60s */
 }
 .marquee_item {
   float: left;
-}
-.marquee_item {
-  @apply md:w-40 w-32;
 }
 
 
@@ -231,6 +236,6 @@ button:hover{
     left: 0;
   }
   100% {
-    left: -100%;
+    left: 100%;
   }
 }
