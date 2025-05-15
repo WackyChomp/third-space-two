@@ -61,4 +61,32 @@ const logoIconsList = [
   }
 ]
 
-export{ words, counterItems, navLinks, logoIconsList }
+const services = [
+  {
+    imgPath: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWV5ZS1pY29uIGx1Y2lkZS1leWUiPjxwYXRoIGQ9Ik0yLjA2MiAxMi4zNDhhMSAxIDAgMCAxIDAtLjY5NiAxMC43NSAxMC43NSAwIDAgMSAxOS44NzYgMCAxIDEgMCAwIDEgMCAuNjk2IDEwLjc1IDEwLjc1IDAgMCAxLTE5Ljg3NiAwIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMyIvPjwvc3ZnPg==',
+    title: "Quality Focus",
+    desc: "Scrutinize and deliver high-quality results",
+  },
+  {
+    imgPath: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFudmlsLWljb24gbHVjaWRlLWFudmlsIj48cGF0aCBkPSJNNyAxMEg2YTQgNCAwIDAgMS00LTQgMSAxIDAgMCAxIDEtMWg0Ii8+PHBhdGggZD0iTTcgNWExIDEgMCAwIDEgMS0xaDEzYTEgMSAwIDAgMSAxIDEgNyA3IDAgMCAxLTcgN0g4YTEgMSAwIDAgMS0xLTF6Ii8+PHBhdGggZD0iTTkgMTJ2NSIvPjxwYXRoIGQ9Ik0xNSAxMnY1Ii8+PHBhdGggZD0iTTUgMjBhMyAzIDAgMCAxIDMtM2g4YTMgMyAwIDAgMSAzIDMgMSAxIDAgMCAxLTEgMUg2YTEgMSAwIDAgMS0xLTEiLz48L3N2Zz4=',
+    title: "Forging",
+    desc: "Creating strong bonds and relationships",
+  },
+  {
+    imgPath: '',
+    title: '',
+    desc: '',
+  },
+  {
+    imgPath: '',
+    title: '',
+    desc: '',
+  },
+  // {
+  //   imgPath: '',
+  //   title: '',
+  //   desc: '',
+  // },
+]
+
+export{ words, counterItems, navLinks, logoIconsList, services }

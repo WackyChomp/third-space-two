@@ -42,6 +42,9 @@ button:hover{
     @apply px-5 md:px-20
   }
 
+  .grid-3-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6;
+  }
   .grid_4_cols{
     @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
   }
