@@ -6,6 +6,7 @@ import Hero from './components/sections/Hero'
 import ShowcaseSection from './components/sections/ShowcaseSection'
 import LogoShowcase from './components/LogoShowcase'
 import ServiceCards from './components/sections/ServiceCards'
+import ExperienceSection from './components/sections/ExperienceSection'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -38,6 +39,10 @@ function App() {
       <LogoShowcase />
 
       <ServiceCards />
+
+<br /><hr />
+
+      <ExperienceSection />
     </>
   )
 }
