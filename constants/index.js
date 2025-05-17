@@ -65,22 +65,32 @@ const services = [
   {
     imgPath: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWV5ZS1pY29uIGx1Y2lkZS1leWUiPjxwYXRoIGQ9Ik0yLjA2MiAxMi4zNDhhMSAxIDAgMCAxIDAtLjY5NiAxMC43NSAxMC43NSAwIDAgMSAxOS44NzYgMCAxIDEgMCAwIDEgMCAuNjk2IDEwLjc1IDEwLjc1IDAgMCAxLTE5Ljg3NiAwIi8+PGNpcmNsZSBjeD0iMTIiIGN5PSIxMiIgcj0iMyIvPjwvc3ZnPg==',
     title: "Quality Focus",
-    desc: "Scrutinize and deliver high-quality results",
+    desc: "Scrutinize anomalies and clarity ambiguity to deliver high-quality results",
   },
   {
     imgPath: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWFudmlsLWljb24gbHVjaWRlLWFudmlsIj48cGF0aCBkPSJNNyAxMEg2YTQgNCAwIDAgMS00LTQgMSAxIDAgMCAxIDEtMWg0Ii8+PHBhdGggZD0iTTcgNWExIDEgMCAwIDEgMS0xaDEzYTEgMSAwIDAgMSAxIDEgNyA3IDAgMCAxLTcgN0g4YTEgMSAwIDAgMS0xLTF6Ii8+PHBhdGggZD0iTTkgMTJ2NSIvPjxwYXRoIGQ9Ik0xNSAxMnY1Ii8+PHBhdGggZD0iTTUgMjBhMyAzIDAgMCAxIDMtM2g4YTMgMyAwIDAgMSAzIDMgMSAxIDAgMCAxLTEgMUg2YTEgMSAwIDAgMS0xLTEiLz48L3N2Zz4=',
-    title: "Forging",
-    desc: "Creating strong bonds and relationships",
+    title: "Forging Bonds",
+    desc: "Cultivate powerful relationships through integrity and reciprocity",
   },
   {
-    imgPath: '',
-    title: '',
-    desc: '',
+    imgPath: 'https://www.svgrepo.com/show/404161/speaking-head.svg',
+    title: 'Platinum Communication',
+    desc: 'Sensitive to little details and deliver concise information with empathy',
   },
   {
-    imgPath: '',
-    title: '',
-    desc: '',
+    imgPath: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWxvY2stb3Blbi1pY29uIGx1Y2lkZS1sb2NrLW9wZW4iPjxyZWN0IHdpZHRoPSIxOCIgaGVpZ2h0PSIxMSIgeD0iMyIgeT0iMTEiIHJ4PSIyIiByeT0iMiIvPjxwYXRoIGQ9Ik03IDExVjdhNSA1IDAgMCAxIDkuOS0xIi8+PC9zdmc+',
+    title: 'Locking In',
+    desc: 'Deadline on the horizon takes priority and requires special attention',
+  },
+  {
+    imgPath: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNhc3RsZS1pY29uIGx1Y2lkZS1jYXN0bGUiPjxwYXRoIGQ9Ik0yMiAyMHYtOUgydjlhMiAyIDAgMCAwIDIgMmgxNmEyIDIgMCAwIDAgMi0yWiIvPjxwYXRoIGQ9Ik0xOCAxMVY0SDZ2NyIvPjxwYXRoIGQ9Ik0xNSAyMnYtNGEzIDMgMCAwIDAtMy0zYTMgMyAwIDAgMC0zIDN2NCIvPjxwYXRoIGQ9Ik0yMiAxMVY5Ii8+PHBhdGggZD0iTTIgMTFWOSIvPjxwYXRoIGQ9Ik02IDRWMiIvPjxwYXRoIGQ9Ik0xOCA0VjIiLz48cGF0aCBkPSJNMTAgNFYyIi8+PHBhdGggZD0iTTE0IDRWMiIvPjwvc3ZnPg==',
+    title: 'Reliability',
+    desc: 'Adapt to uncertainty anytime/anywhere to deliver the latest information',
+  },
+  {
+    imgPath: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJpY2Vwcy1mbGV4ZWQtaWNvbiBsdWNpZGUtYmljZXBzLWZsZXhlZCI+PHBhdGggZD0iTTEyLjQwOSAxMy4wMTdBNSA1IDAgMCAxIDIyIDE1YzAgMy44NjYtNCA3LTkgNy00LjA3NyAwLTguMTUzLS44Mi0xMC4zNzEtMi40NjItLjQyNi0uMzE2LS42MzEtLjgzMi0uNjItMS4zNjJDMi4xMTggMTIuNzIzIDIuNjI3IDIgMTAgMmEzIDMgMCAwIDEgMyAzIDIgMiAwIDAgMS0yIDJjLTEuMTA1IDAtMS42NC0uNDQ0LTItMSIvPjxwYXRoIGQ9Ik0xNSAxNGE1IDUgMCAwIDAtNy41ODQgMiIvPjxwYXRoIGQ9Ik05Ljk2NCA2LjgyNUM4LjAxOSA3Ljk3NyA5LjUgMTMgOCAxNSIvPjwvc3ZnPg==',
+    title: 'Resilience',
+    desc: 'You will get your services/deliverables no matter the obstacles/circumstances',
   },
   // {
   //   imgPath: '',

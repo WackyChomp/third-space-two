@@ -151,6 +151,10 @@ button:hover{
   .gradient_edge{
     @apply w-36 h-full absolute bottom-0 z-20;
   }
+
+  .card_border{
+    @apply border border-green-600 bg-red-950;
+  }
 }
 
 
