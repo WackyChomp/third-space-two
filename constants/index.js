@@ -99,4 +99,67 @@ const services = [
   // },
 ]
 
-export{ words, counterItems, navLinks, logoIconsList, services }
+const experienceCards = [
+  {
+  review: "Experienced data analyst with a strong background in transforming raw data into actionable insights to drive business decisions.",
+  imgPath: "",
+  logoPath: "",
+  title: "Data Analyst",
+  date: "02/2025 - Present",
+  accomplishments: [
+    "Developed and maintained dashboards to visualize key performance indicators, improving data accessibility for stakeholders.",
+    "Conducted in-depth analysis of large datasets to identify trends and opportunities, contributing to strategic business decisions.",
+    "Collaborated with cross-functional teams to optimize data collection processes and enhance reporting accuracy."
+  ]
+  },
+  {
+    review: "Experienced software engineer skilled in designing, developing, and optimizing scalable applications using modern programming languages and frameworks.",
+    imgPath: "",
+    logoPath: "",
+    title: "Software Engineer",
+    date: "04/2024 - 12/2024",
+    accomplishments: [
+      "Led development of a high-performance web application, improving system efficiency by 30%.",
+      "Implemented automated testing pipelines, reducing deployment errors and increasing reliability.",
+      "Collaborated with cross-functional teams to build user-centric software solutions tailored to business needs."
+    ]
+  },
+  {
+    review: "Detail-oriented QA professional with expertise in manual and automated testing, ensuring software quality and optimal user experience.",
+    imgPath: "",
+    logoPath: "",
+    title: "QA Engineer",
+    date: "08/2023 - 02/2024",
+    accomplishments: [
+      "Developed comprehensive test plans and executed manual testing to identify and resolve critical defects.",
+      "Designed automated test scripts, reducing regression testing time by 40%.",
+      "Worked closely with developers to enhance software stability and optimize performance through rigorous validation."
+    ]
+  },
+  {
+    review: "Creative and user-focused UX/UI designer passionate about crafting seamless and intuitive digital experiences through research-driven design.",
+    imgPath: "",
+    logoPath: "",
+    title: "UX/UI Designer",
+    date: "01/2020 - 06/2023",
+    accomplishments: [
+      "Designed wireframes and prototypes that enhanced user engagement, increasing conversion rates by 25%.",
+      "Conducted usability testing and gathered feedback to refine UI components for better accessibility.",
+      "Collaborated with developers to translate design concepts into functional and visually appealing interfaces."
+    ]
+  },
+  // {
+  //   review: '',
+  //   imgPath: '',
+  //   logoPath: '',
+  //   title: '',
+  //   date: '',
+  //   accomplishments: [
+  //     '',
+  //     '',
+  //     '',
+  //   ]
+  // },
+]
+
+export{ words, counterItems, navLinks, logoIconsList, services, experienceCards }

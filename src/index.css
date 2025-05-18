@@ -165,6 +165,12 @@ button:hover{
   .hero_badge {
     @apply bg-blue-600 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
   }
+
+
+
+  .exp_card_wrapper{
+    @apply flex flex-col-reverse xl:flex-row xl:gap-20 gap-10 justify-between;
+  }
 }
 
 

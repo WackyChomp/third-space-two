@@ -1,5 +1,6 @@
 import React from 'react'
 import TitleHeader from '../TitleHeader'
+import { experienceCards } from '../../../constants'
 
 const ExperienceSection = () => {
   return (
@@ -9,6 +10,21 @@ const ExperienceSection = () => {
         <p className='text-[20px]'>My Career Overview</p>
 
         <TitleHeader title='Professional Work Experience' sub='My Career Overview' />
+
+        <div className="mt-32 relative">
+          <div className="relative z-50 xl:space-y-32 space-y-10">
+            {experienceCards.map(({ review, title, date, accomplishments}) => (
+              <div className="exp_card_wrapper">
+                <div className="bg-blue-500 p-2">
+                  <div className='bg-red-500'>{review}</div>
+                  <div className='bg-orange-300'>{title}</div>
+                  <div className='bg-green-300'>{date}</div>
+                  <div className='bg-amber-300'>{accomplishments}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   )
