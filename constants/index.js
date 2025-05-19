@@ -102,7 +102,7 @@ const services = [
 const experienceCards = [
   {
   review: "Experienced data analyst with a strong background in transforming raw data into actionable insights to drive business decisions.",
-  imgPath: "",
+  imgPath: "https://jessup.edu/wp-content/uploads/2024/01/Is-Data-Analyst-a-Stressful-Job.jpg",
   logoPath: "",
   title: "Data Analyst",
   date: "02/2025 - Present",
@@ -114,7 +114,7 @@ const experienceCards = [
   },
   {
     review: "Experienced software engineer skilled in designing, developing, and optimizing scalable applications using modern programming languages and frameworks.",
-    imgPath: "",
+    imgPath: "https://online.maryville.edu/wp-content/uploads/sites/97/2020/07/software-developer-coding.jpg",
     logoPath: "",
     title: "Software Engineer",
     date: "04/2024 - 12/2024",
@@ -126,7 +126,7 @@ const experienceCards = [
   },
   {
     review: "Detail-oriented QA professional with expertise in manual and automated testing, ensuring software quality and optimal user experience.",
-    imgPath: "",
+    imgPath: "https://www.asrintl.com/wp-content/uploads/2018/03/qualityassurance.jpg",
     logoPath: "",
     title: "QA Engineer",
     date: "08/2023 - 02/2024",
@@ -138,7 +138,7 @@ const experienceCards = [
   },
   {
     review: "Creative and user-focused UX/UI designer passionate about crafting seamless and intuitive digital experiences through research-driven design.",
-    imgPath: "",
+    imgPath: "https://miro.medium.com/v2/resize:fit:1400/0*jww-07rUpl41S5yB",
     logoPath: "",
     title: "UX/UI Designer",
     date: "01/2020 - 06/2023",
