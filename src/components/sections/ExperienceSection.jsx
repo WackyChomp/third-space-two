@@ -14,15 +14,19 @@ const ExperienceSection = () => {
 
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
-            {experienceCards.map((card) => (
+            {experienceCards.map((card, index) => (
               <div className="exp_card_wrapper">
+
+                {/* Left side: experience */}
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
+                  <GlowCard card={card} index={index}>
                     <div>
                       <img src={card.imgPath} alt={card.title} />
                     </div>
                   </GlowCard>
                 </div>
+
+                {/* Right side: Timeline */}
               </div>
             ))}
           </div>
