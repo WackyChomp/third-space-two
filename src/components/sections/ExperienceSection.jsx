@@ -27,6 +27,37 @@ const ExperienceSection = () => {
                 </div>
 
                 {/* Right side: Timeline */}
+                <div className="xl:w-4/6">
+                  <div className="flex items-start">
+                    <div className="timeline_wrapper">
+                      <div className='timeline'/>
+                      <div className='w-1 h-full'/>
+                    </div>
+
+                    <div className="flex xl:gap-20 md:gap-10 gap-5 relative z-20">
+                      <div className="timeline_logo">
+                        <img src={card.logoPath} alt="logo" />
+                      </div>
+                      <div>
+                        <h1 className='font-semibold text-3xl'>{card.title}</h1>
+                        <p className="my-5 text-blue-900">{card.date}</p>
+
+                        <p className='italic'>Accomplishments</p>
+                        <ul className='list-disc ms-5 mt-5 flex flex-col gap-5 text-pink-800'>
+                          {card.accomplishments.map((accomplishment) => (
+                            <li key={accomplishment} className='text-lg'>
+                              {accomplishment}
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                </div>
+
+                
               </div>
             ))}
           </div>
