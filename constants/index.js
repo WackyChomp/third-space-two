@@ -162,4 +162,20 @@ const experienceCards = [
   // },
 ]
 
-export{ words, counterItems, navLinks, logoIconsList, services, experienceCards }
+
+const techStackIcons = [
+  {
+    name: "The Reactor",
+    modelPath: "/models/react_logo-transformed.glb",
+    scale: 1,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "3rd Dimension",
+    modelPath: "/models/three.js-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+];
+
+export{ words, counterItems, navLinks, logoIconsList, services, experienceCards, techStackIcons }

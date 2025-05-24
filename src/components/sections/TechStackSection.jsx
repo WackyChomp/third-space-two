@@ -1,5 +1,7 @@
 import React from 'react'
 import TechIcons from '../Models/TechLogos/TechIcons'
+import { techStackIcons } from '../../../constants'
+import TitleHeader from '../TitleHeader'
 
 const TechStackSection = () => {
   return (
@@ -17,7 +19,7 @@ const TechStackSection = () => {
               className="card_border overflow-hidden group xl:rounded-full rounded-lg"
             >
               <div className="">
-                <TechIcon model={icon} />
+                <TechIcons model={icon} />
               </div>
 
               <div className="padding_x w-full">
