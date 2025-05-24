@@ -9,10 +9,15 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+{/*
+  expText is a class with no styling in index.css (only for gsap to reference)
+*/}
+
+
 const ExperienceSection = () => {
   useGSAP(() => {
     // Not working
-    gsap.utils.toArray('.timeline-card').forEach((card) => {
+    gsap.utils.toArray('.card').forEach((card) => {
       gsap.from(card, {
         xPercent: -100,
         opacity: 0,
@@ -85,7 +90,7 @@ const ExperienceSection = () => {
                   <div className="flex items-start">
                     <div className="timeline_wrapper">
                       <div className='timeline'/>
-                      <div className='w-1 h-full'/>
+                      <div className='gradient_line w-1 h-full'/>
                     </div>
 
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
