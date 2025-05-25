@@ -41,10 +41,11 @@ function App() {
 
       <ServiceCards />
 
-<br /><hr />
+<hr />
 
       <ExperienceSection />
 
+<hr />
       <TechStackSection />
     </>
   )
