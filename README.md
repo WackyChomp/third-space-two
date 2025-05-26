@@ -43,6 +43,26 @@ This section includes a list major frameworks/libraries used in this project:
 * [![Vite][Vite]][Vite-url]
 
 
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Setup
+Quickly running locally
+1. Clone the repo
+   ```sh
+   git clone https://github.com/WackyChomp/third-space-two.git
+   ```
+2. Install NPM packages into root directory or same directory as "<u>package.json</u>"
+   ```sh
+   npm install
+   ```
+3. Running on local computer <b>[Run this in root directory]</b>
+   ```
+   npm run dev
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->

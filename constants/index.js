@@ -176,6 +176,24 @@ const techStackIcons = [
     scale: 0.05,
     rotation: [0, 0, 0],
   },
+  {
+    name: "Managing Workflow",
+    modelPath: "/public/models/git-svg-transformed.glb",
+    scale: 0.05,
+    rotation: [0, 0, 0],
+  },
+  {
+    name: "DOA, you're coming with me!",
+    modelPath: "/public/models/robocop_animated.glb",
+    scale: 2,
+    rotation: [0, 0, 0],
+  },
+  // {
+  //   name: "",
+  //   modelPath: "/public/models/",
+  //   scale: 0.05,
+  //   rotation: [0, 0, 0],
+  // },
 ];
 
 export{ words, counterItems, navLinks, logoIconsList, services, experienceCards, techStackIcons }
