@@ -220,4 +220,37 @@ const techStackImgs = [
   // },
 ]
 
-export{ words, counterItems, navLinks, logoIconsList, services, experienceCards, techStackIcons, techStackImgs }
+const testimonials = [
+  {
+    name: 'Zenton Sphere',
+    mentions: '@crimsondynamite',
+    review: `Zenton was a phenomenal worker who strives to alleviate the workload of others and showed genuine care which is rarely seen in the workplace`,
+    imgPath: 'https://i.pinimg.com/736x/42/a7/1b/42a71be4dca58106f4828c2d2c58fb73.jpg',
+  },
+  {
+    name: 'Jacob Lee',
+    mentions: '@jacoblee',
+    review: `Jacob's expertise in software development is impressive. His solutions are efficient, scalable, and drive real business impact.`,
+    imgPath: 'https://as2.ftcdn.net/jpg/01/25/68/37/1000_F_125683702_KzYgSIAUqhI6wmxNL49pgG6XafE3E5pO.jpg',
+  },
+  {
+    name: 'Sophia Martinez',
+    mentions: '@sophiam',
+    review: `Sophia is an outstanding data analyst—her insights are transformative, and her visualizations make complex data approachable.`,
+    imgPath: 'https://t4.ftcdn.net/jpg/04/04/84/35/360_F_404843510_CVgjxWxhW2ipkOM8Vuk5IQEnc1Q54by6.jpg',
+  },
+  {
+    name: 'Daniel Carter',
+    mentions: '@danielc',
+    review: `Daniel's UX-UI designs are intuitive and user-friendly. His work enhances usability and customer satisfaction.`,
+    imgPath: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_items_boosted&w=740',
+  },
+  // {
+  //   name: '',
+  //   mentions: '',
+  //   review: ``,
+  //   imgPath: '',
+  // },
+]
+
+export{ words, counterItems, navLinks, logoIconsList, services, experienceCards, techStackIcons, techStackImgs, testimonials }

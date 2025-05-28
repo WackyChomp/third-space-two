@@ -8,6 +8,7 @@ import LogoShowcase from './components/LogoShowcase'
 import ServiceCards from './components/sections/ServiceCards'
 import ExperienceSection from './components/sections/ExperienceSection'
 import TechStackSection from './components/sections/TechStackSection'
+import Testimonials from './components/sections/Testimonials'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -47,6 +48,9 @@ function App() {
 
 <hr />
       <TechStackSection />
+
+<hr />
+      <Testimonials />
     </>
   )
 }
