@@ -1,9 +1,24 @@
 import React from 'react'
 import TechIcons from '../Models/TechLogos/TechIcons'
-import { techStackIcons } from '../../../constants'
+import { techStackIcons, techStackImgs } from '../../../constants'
 import TitleHeader from '../TitleHeader'
+import { useGSAP } from '@gsap/react'
+import { gsap } from 'gsap'
 
 const TechStackSection = () => {
+  useGSAP(() => {
+    gsap.fromTo('.tech_card', { y:50, opacity: 0 }, {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: 'power2.inOut',
+      stagger: 0.2,
+      scrollTrigger: {
+        trigger: '#skills',
+        start: 'top center'
+      }
+    })
+  })
   return (
     <div id='skills' className='flex-center section_padding'>
       <div>
@@ -27,6 +42,21 @@ const TechStackSection = () => {
                 <p>{icon.name}</p>
               </div>
               
+            </div>
+          ))}
+
+          {techStackImgs.map((icon) => (
+            <div className="card_border tech_card overflow-hidden group xl:rounded-full rounded-lg">
+              <div className="tech_card_animated_bg">
+
+                  <div className="tech_icon_wrapper">
+                    <img src={icon.imgPath} />
+                  </div>
+                  <div className="padding_x w-full">
+                    <p>{icon.name}</p>
+                  </div>
+
+              </div>
             </div>
           ))}
         </div>

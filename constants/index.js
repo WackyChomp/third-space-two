@@ -196,4 +196,28 @@ const techStackIcons = [
   // },
 ];
 
-export{ words, counterItems, navLinks, logoIconsList, services, experienceCards, techStackIcons }
+
+const techStackImgs = [
+  {
+    name: 'Sneaky Slithering Snake',
+    imgPath: 'https://img.icons8.com/color/100/python--v1.png',
+  },
+  {
+    name: 'Just Sleezy',
+    imgPath: 'https://img.icons8.com/color/100/javascript--v1.png',
+  },
+  {
+    name: 'Go inside, Tuttle',
+    imgPath: 'https://img.icons8.com/color/100/git--v1.png',
+  },
+  {
+    name: 'Fuzzy Kitty Kat',
+    imgPath: 'https://img.icons8.com/emoji/100/cat-emoji.png',
+  },
+  // {
+  //   name: '',
+  //   imgPath: '',
+  // },
+]
+
+export{ words, counterItems, navLinks, logoIconsList, services, experienceCards, techStackIcons, techStackImgs }
