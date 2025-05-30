@@ -9,6 +9,8 @@ import ServiceCards from './components/sections/ServiceCards'
 import ExperienceSection from './components/sections/ExperienceSection'
 import TechStackSection from './components/sections/TechStackSection'
 import Testimonials from './components/sections/Testimonials'
+import Contacts from './components/sections/Contacts'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -51,6 +53,10 @@ function App() {
 
 <hr />
       <Testimonials />
+
+<hr />
+      <Contacts />
+
     </>
   )
 }
