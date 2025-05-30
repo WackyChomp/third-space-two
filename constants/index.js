@@ -245,6 +245,19 @@ const testimonials = [
     review: `Daniel's UX-UI designs are intuitive and user-friendly. His work enhances usability and customer satisfaction.`,
     imgPath: 'https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?semt=ais_items_boosted&w=740',
   },
+  {
+    name: 'Sophia Reynolds',
+    mentions: '@SophiaReynoldsMeticulous',
+    review: `Sophia's precision in quality assurance guarantees top-tier products. Her keen attention to detail ensures nothing is overlooked!`,
+    imgPath: 'https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-04.jpg',
+  },
+  {
+    name: 'Dr. Marcus Vance',
+    mentions: '@MarcusVanceInnovative',
+    review: `Dr. Vance's revolutionary chemistry research pushes boundaries. His brilliant molecular insights inspire scientists and redefine organic synthesis methods.`,
+    imgPath: 'https://static01.nyt.com/newsgraphics/2020/11/12/fake-people/4b806cf591a8a76adfc88d19e90c8c634345bf3d/fallbacks/mobile-02.jpg',
+  },
+
   // {
   //   name: '',
   //   mentions: '',
