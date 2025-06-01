@@ -1,8 +1,11 @@
 import React from 'react'
 import TitleHeader from '../TitleHeader'
 import { useState } from 'react'
+import ContactExperience from '../Models/contact/ContactExperience'
 
 const Contacts = () => {
+  const downIcon = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vdmUtZG93bi1pY29uIGx1Y2lkZS1tb3ZlLWRvd24iPjxwYXRoIGQ9Ik04IDE4TDEyIDIyTDE2IDE4Ii8+PHBhdGggZD0iTTEyIDJWMjIiLz48L3N2Zz4=`
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -80,7 +83,13 @@ const Contacts = () => {
                 </div>
 
                 <button type='submit'>
-                  Send It!
+                  <div className="cta_button group">
+                    <div className="bg_circle" />
+                    <p className='text'>Send It!</p>
+                    <div className="arrow_wrapper">
+                      <img src={downIcon} alt="down-icon" className='animate-bounce' />
+                    </div>
+                  </div>
                 </button>
                 
               </form>
@@ -93,7 +102,7 @@ const Contacts = () => {
 
         {/* Right Side */}
         <div className="border-2 border-green-500 xl:col-span-7 min-h-96">
-
+          <ContactExperience />
         </div>
         
       </div>
