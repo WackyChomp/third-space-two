@@ -60,7 +60,7 @@ button:hover{
     @apply relative z-20 cursor-pointer;
   }
   .cta_button{
-    @apply px-4 py-4 rounded-lg bg-teal-800 flex justify-center items-center relative cursor-pointer overflow-hidden;
+    @apply p-3 m-2 rounded-lg bg-teal-800 flex justify-center items-center relative cursor-pointer overflow-hidden;
   }
   .bg_circle {
     @apply absolute -right-10 origin-center top-1/2 -translate-y-1/2 w-[120%] h-[120%] group-hover:size-10 group-hover:right-10 rounded-full bg-white-50 transition-all duration-500;
@@ -201,8 +201,20 @@ button:hover{
     @apply bg-red-900 absolute left-0 bottom-[-100%] w-full h-full group-hover:bottom-0 transition-all duration-700;
   }
 
-  .tech-icon-wrapper {
+  .tech_icon_wrapper {
     @apply flex justify-center items-center w-52 h-60 relative;
+  }
+
+
+  form {
+    label {
+      @apply block text-orange-500 mb-2;
+    }
+
+    input,
+    textarea {
+      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-500 bg-green-950 rounded-lg;
+    }
   }
 }
 

@@ -101,7 +101,7 @@ const Contacts = () => {
 
 
         {/* Right Side */}
-        <div className="border-2 border-green-500 xl:col-span-7 min-h-96">
+        <div className="border-2 border-green-500 bg-blue-950 xl:col-span-7 min-h-96">
           <ContactExperience />
         </div>
         

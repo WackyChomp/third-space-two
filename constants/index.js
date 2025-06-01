@@ -28,12 +28,12 @@ const navLinks = [
     link: "#experience",
   },
   {
-    name: "Test 1",
-    link: "#test1",
+    name: "Skills",
+    link: "#skills",
   },
   {
-    name: "Test 2",
-    link: "#test2",
+    name: "Testimonials",
+    link: "#testimonials",
   },
   /*
   {
