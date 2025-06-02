@@ -102,7 +102,10 @@ const Contacts = () => {
 
         {/* Right Side */}
         <div className="border-2 border-green-500 bg-blue-950 xl:col-span-7 min-h-96">
+          <div className="w-full h-full bg-blue-500 rounded-3xl overflow-hidden">
+
           <ContactExperience />
+          </div>
         </div>
         
       </div>

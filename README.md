@@ -23,8 +23,20 @@
 
 <br />
 
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#getting-started">Getting Started</a></li>
+    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#"></a></li>
+  </ol>
+</details>
 
-### About
+
+### About The Project
 What's better than flat 2d? How about 3d? 
 Lively up your personal portfolio/site with 3d models and animations.
 
@@ -60,6 +72,28 @@ Quickly running locally
    ```
    npm run dev
    ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<!-- ACKNOWLEDGMENTS -->
+## Acknowledgments 
+🌟🤗🌟
+
+List of incredible resources that give you inspiration or point you into a direction:
+
+* [Choose an Open Source License](https://choosealicense.com)
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
+* [Emojipedia 😱](https://emojipedia.org/smileys)
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
+* [Malven's Grid Cheatsheet](https://grid.malven.co/)
+* [Font Awesome](https://fontawesome.com)
+<br><br>
+* [Vite](https://vite.dev/) - Frontend build tool
+* [Tailwind CSS](https://tailwindcss.com/docs/installation) - CSS framework
+<!--
+* []() - 
+-->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
