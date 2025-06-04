@@ -1,4 +1,5 @@
-import React from 'react'
+import { useRef } from 'react'
+import emailjs from '@emailjs/browser'
 import TitleHeader from '../TitleHeader'
 import { useState } from 'react'
 import ContactExperience from '../Models/contact/ContactExperience'
@@ -6,11 +7,14 @@ import ContactExperience from '../Models/contact/ContactExperience'
 const Contacts = () => {
   const downIcon = `data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLW1vdmUtZG93bi1pY29uIGx1Y2lkZS1tb3ZlLWRvd24iPjxwYXRoIGQ9Ik04IDE4TDEyIDIyTDE2IDE4Ii8+PHBhdGggZD0iTTEyIDJWMjIiLz48L3N2Zz4=`
 
+  const formRef = useRef(null)
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: '',
   });
+
+  const [loading, setLoading] = useState(false)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,10 +24,23 @@ const Contacts = () => {
     })
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form Submitted:', formData);
-    setFormData({ name: '', email: '', message: ''});
+
+    setLoading(true)
+    try {
+      await emailjs.sendForm(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY,
+        formRef.current,
+      )
+      setFormData({ name: '', email: '', message: ''});
+    } catch (error) {
+      console.log('EMAILJS ERROR', error);
+    } finally{
+      setLoading(false)
+    }
   }
 
 
@@ -47,7 +64,7 @@ const Contacts = () => {
             <div className="flex_center card_border rounded-2xl p-10">
 
 
-              <form onSubmit={handleSubmit} className='w-full flex flex-col gap-7'>
+              <form onSubmit={handleSubmit} ref={formRef} className='w-full flex flex-col gap-7'>
                 <div className="">
                   <label htmlFor="name">Name</label>
                   <input type="text" 
@@ -65,7 +82,7 @@ const Contacts = () => {
                     id='email'
                     name='email'
                     placeholder='Your Email'
-                    value={formData.name}
+                    value={formData.email}
                     onChange={handleChange}
                   />
                 </div>
@@ -77,15 +94,15 @@ const Contacts = () => {
                     name='message'
                     rows='5'
                     placeholder='Your Message'
-                    value={formData.name}
+                    value={formData.message}
                     onChange={handleChange}
                   />
                 </div>
 
-                <button type='submit'>
+                <button type='submit' disabled={loading}>
                   <div className="cta_button group">
                     <div className="bg_circle" />
-                    <p className='text'>Send It!</p>
+                    <p className='text'>{loading ? 'Sending . .. ...': 'Sent It!'}</p>
                     <div className="arrow_wrapper">
                       <img src={downIcon} alt="down-icon" className='animate-bounce' />
                     </div>

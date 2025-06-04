@@ -213,7 +213,7 @@ button:hover{
 
     input,
     textarea {
-      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-500 bg-green-950 rounded-lg;
+      @apply w-full px-4 py-4 md:text-base text-sm placeholder:text-blue-500 text-orange-500 bg-green-950 rounded-lg;
     }
   }
 }
